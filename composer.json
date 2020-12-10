@@ -1,0 +1,4 @@
+{
+    "name" : "lundmark/forecaster",
+    "description" : "Module for the model Forecaster, used for fetching weather and forecast"
+}
