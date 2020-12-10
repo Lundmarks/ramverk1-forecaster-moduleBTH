@@ -1,4 +1,27 @@
 {
-    "name" : "lundmark/forecaster",
-    "description" : "Module for the model Forecaster, used for fetching weather and forecast"
+    "name": "lundmark/forecaster",
+    "type": "library",
+    "description": "Module for the model Forecaster, used for fetching weather and forecast",
+    "authors": [
+        {
+            "name": "Olle Lundmark",
+            "email": "Ldmk@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "anax/commons": "^2.0.14"
+    },
+    "require-dev": {
+        "phpmetrics/phpmetrics": "^2",
+        "phpunit/phpunit": "^7",
+        "anax/anax": "^2.0.17"
+    }
 }
