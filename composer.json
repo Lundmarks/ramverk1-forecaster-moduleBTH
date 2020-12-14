@@ -1,5 +1,5 @@
 {
-    "name": "Lundmark/forecaster",
+    "name": "lundmark/forecaster",
     "type": "library",
     "description": "Module for the model Forecaster, used for fetching weather and forecast",
     "authors": [
