@@ -17,17 +17,17 @@ But first of all, installation instructions!
 
 composer require lundmark/forecaster
 
-- Files should install, and get placed in vendor/Lundmark/forecaster
+- Files should install, and get placed in vendor/lundmark/forecaster
 - After this, move files to correct locations.
 - Standing in root of your install-directory:
 
-rsync -av vendor/Lundmark/forecaster/config ./
+rsync -av vendor/lundmark/forecaster/config ./config/
 
-rsync -av vendor/Lundmark/forecaster/src ./
+rsync -av vendor/lundmark/forecaster/src ./
 
-rsync -av vendor/Lundmark/forecaster/test ./
+rsync -av vendor/lundmark/forecaster/test ./
 
-rsync -av vendor/Lundmark/forecaster/content/ ./content/
+rsync -av vendor/lundmark/forecaster/content/ ./content/
 
 -----------------------------------------------------
 
@@ -40,27 +40,27 @@ rsync -av vendor/Lundmark/forecaster/content/ ./content/
 ## Standing in me/module/testme/ ##
 
 - FROM
-vendor/Lundmark/forecaster/config/di/forecaster.php
+vendor/lundmark/forecaster/config/di/forecaster.php
 - TO
 config/di/
 -----------------------------------------------------
 - FROM
-vendor/Lundmark/forecaster/config/apikeys.php
+vendor/lundmark/forecaster/config/apikeys.php
 - TO
 config/
 -----------------------------------------------------
 - FROM
-vendor/Lundmark/forecaster/src/Models/Forecaster.php
+vendor/lundmark/forecaster/src/Models/Forecaster.php
 - TO
 src/Models/
 -----------------------------------------------------
 - FROM
-vendor/Lundmark/forecaster/test/Models/ForecasterTest.php
+vendor/lundmark/forecaster/test/Models/ForecasterTest.php
 - TO
 test/Models/
 -----------------------------------------------------
 - FROM
-vendor/Lundmark/forecaster/test/Models/ForecasterTest.php
+vendor/lundmark/forecaster/test/Models/ForecasterTest.php
 - TO
 test/Models/
 -----------------------------------------------------
@@ -69,10 +69,10 @@ test/Models/
 (These can also be ran as bash commands, to move files to necessary locations.)
 
 ## Move config file for DI, and api-key ##
-rsync -av vendor/Lundmark/forecaster/config ./
+rsync -av vendor/lundmark/forecaster/config ./
 ## Move main source files ##
-rsync -av vendor/Lundmark/forecaster/src ./
+rsync -av vendor/lundmark/forecaster/src ./
 ## Move unittest-related files ##
-rsync -av vendor/Lundmark/forecaster/test ./
+rsync -av vendor/lundmark/forecaster/test ./
 ## Move documentation-file ##
-rsync -av vendor/Lundmark/forecaster/content/ ./content/
+rsync -av vendor/lundmark/forecaster/content/ ./content/
