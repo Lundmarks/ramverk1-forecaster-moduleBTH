@@ -8,9 +8,29 @@ Places a file in models, and also integrates itself softly with $di in a simple 
 
 Below are discussed what files are moved, and where these are placed.
 
+But first of all, installation instructions!
+
+## INSTALLATION ##
+-----------------------------------------------------
+
+- Standing in root of your install-directory:
+composer require lundmark/forecaster
+
+- Files should install, and get placed in vendor/Lundmark/forecaster
+- After this, move files to correct locations.
+- Standing in root of your install-directory:
+rsync -av vendor/Lundmark/forecaster/config ./
+rsync -av vendor/Lundmark/forecaster/src ./
+rsync -av vendor/Lundmark/forecaster/test ./
+rsync -av vendor/Lundmark/forecaster/content/ ./content/
+
+-----------------------------------------------------
+
+- Below, all files that needs to be moved are listed. These are the same as mentioned above, in the bash code.
+
+-----------------------------------------------------
 
 ## Files that needs to be moved ##
-*(See below for bash-commands, automating this process.)
 
 # Standing in me/module/testme/
 -----------------------------------------------------
@@ -18,35 +38,31 @@ Below are discussed what files are moved, and where these are placed.
 vendor/Lundmark/forecaster/config/di/forecaster.php
 # TO
 config/di/
-
 -----------------------------------------------------
 # FROM
 vendor/Lundmark/forecaster/config/apikeys.php
 # TO
 config/
-
 -----------------------------------------------------
 # FROM
 vendor/Lundmark/forecaster/src/Models/Forecaster.php
 # TO
 src/Models/
 * Create folder: Models
-
 -----------------------------------------------------
 # FROM
 vendor/Lundmark/forecaster/test/Models/ForecasterTest.php
 # TO
 test/Models/
 * Create folder: Models
-
 -----------------------------------------------------
 # FROM
 vendor/Lundmark/forecaster/test/Models/ForecasterTest.php
 # TO
 test/Models/
 * Create folder: Models
-
 -----------------------------------------------------
+
 ## Resulting commands ##
 (These can also be ran as bash commands, to move files to necessary locations.)
 
