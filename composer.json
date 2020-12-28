@@ -22,6 +22,7 @@
     "require-dev": {
         "phpmetrics/phpmetrics": "^2",
         "phpunit/phpunit": "^7",
+        "phpunit/dbunit": "^4.0",
         "anax/anax": "^2.0.17"
     }
 }
