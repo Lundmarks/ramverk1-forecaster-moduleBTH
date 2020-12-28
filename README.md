@@ -1,7 +1,9 @@
-# ramverk1-forecaster-moduleBTH
+## ramverk1-forecaster-moduleBTH ##
 Forecaster- moved from main branch to a module-based build.
 
-## FORECASTER ##
+[![Build Status](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth.svg?branch=master)](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth)
+
+# FORECASTER
 
 This module can be used for handling fetching weathers from a location (lat/long).
 Places a file in models, and also integrates itself softly with $di in a simple way.
