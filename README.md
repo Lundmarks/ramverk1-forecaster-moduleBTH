@@ -5,9 +5,17 @@ Forecaster- moved from main branch to a module-based build.
 
 [![CircleCI](https://circleci.com/gh/Lundmarks/ramverk1-forecaster-modulebth.svg?style=svg)](https://app.circleci.com/pipelines/github/Lundmarks/ramverk1-forecaster-modulebth)
 
+[![Scrutinizer Build Status](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/build-status/master)
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/?branch=master)
 
 [![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/?branch=master)
+
+[![SymfonyInsight](https://insight.symfony.com/projects/9a5829e9-1c78-425f-80db-65b145a4f342/mini.svg)](https://insight.symfony.com/projects/9a5829e9-1c78-425f-80db-65b145a4f342)
+
+[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/7acf3e60bb41a66c18d8/maintainability)](https://codeclimate.com/github/Lundmarks/ramverk1-forecaster-modulebth/maintainability)
+
+[![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/7acf3e60bb41a66c18d8/test_coverage)](https://codeclimate.com/github/Lundmarks/ramverk1-forecaster-modulebth/test_coverage)
 
 # FORECASTER
 
