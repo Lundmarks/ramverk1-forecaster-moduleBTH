@@ -1,7 +1,13 @@
 ## ramverk1-forecaster-moduleBTH ##
 Forecaster- moved from main branch to a module-based build.
 
-[![Build Status](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth.svg?branch=master)](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth)
+[![Travis CI](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth.svg?branch=master)](https://travis-ci.com/Lundmarks/ramverk1-forecaster-modulebth)
+
+[![CircleCI](https://circleci.com/gh/Lundmarks/ramverk1-forecaster-modulebth.svg?style=svg)](https://app.circleci.com/pipelines/github/Lundmarks/ramverk1-forecaster-modulebth)
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/?branch=master)
+
+[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Lundmarks/ramverk1-forecaster-modulebth/?branch=master)
 
 # FORECASTER
 
