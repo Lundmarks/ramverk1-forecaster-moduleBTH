@@ -85,6 +85,7 @@ class Forecaster
             curl_multi_exec($master, $running);
         } while ($running > 0);
 
+        $results = array();
         for ($i = 0; $i < $urlCount; $i++) {
             $results[$i] = curl_multi_getcontent($responseArr[$i]);
             $results[$i] = json_decode($results[$i]);

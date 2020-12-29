@@ -8,10 +8,6 @@
         </testsuite>
     </testsuites>
 
-    <php>
-      <ini name="xdebug.mode" value="coverage" />
-    </php>
-
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">src</directory>
