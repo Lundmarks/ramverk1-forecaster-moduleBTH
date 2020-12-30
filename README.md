@@ -15,6 +15,13 @@ But first of all, installation instructions!
 ## INSTALLATION ##
 -----------------------------------------------------
 
+The easiest way to install this module is to stand in the root of your project (after installing this module via composer) and run
+`./vendor/lundmark/forecaster/.anax/scaffold/postprocess.d/500_forecaster_bash`
+
+This will implement the files onto your project.
+
+Here is what the bash-file does: >>>
+
 - Standing in root of your install-directory:
 
 composer require lundmark/forecaster
@@ -66,15 +73,3 @@ vendor/lundmark/forecaster/test/Models/ForecasterTest.php
 - TO
 test/Models/
 -----------------------------------------------------
-
-# Resulting commands
-(These can also be ran as bash commands, to move files to necessary locations.)
-
-## Move config file for DI, and api-key ##
-rsync -av vendor/lundmark/forecaster/config ./
-## Move main source files ##
-rsync -av vendor/lundmark/forecaster/src ./
-## Move unittest-related files ##
-rsync -av vendor/lundmark/forecaster/test ./
-## Move documentation-file ##
-rsync -av vendor/lundmark/forecaster/content/ ./content/
