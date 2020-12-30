@@ -16,7 +16,7 @@ But first of all, installation instructions!
 -----------------------------------------------------
 
 The easiest way to install this module is to stand in the root of your project (after installing this module via composer) and run
-`./vendor/lundmark/forecaster/.anax/scaffold/postprocess.d/500_forecaster_bash`
+`./vendor/lundmark/forecaster/.anax/scaffold/postprocess.d/500_forecaster.bash`
 
 This will implement the files onto your project.
 
