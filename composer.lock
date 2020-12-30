@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dfdea376ff996ac7c201663756fdca4",
+    "content-hash": "a6a92a01dfeb0f2e3ab2b7fe0a123f7c",
     "packages": [
         {
             "name": "anax/commons",

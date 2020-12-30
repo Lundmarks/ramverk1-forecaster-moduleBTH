@@ -4,19 +4,11 @@ namespace Anax\Models;
 
 class Forecaster
 {
-
-
     protected $owmApiKey = "";
     protected $geoApiKey = "";
 
     protected $latitude = "";
     protected $longitude = "";
-
-    // protected $temperature = ""; //celsius
-    // protected $feelsLike = ""; //also celsius
-    // protected $windSpeed = ""; //m/s
-    // protected $weatherMain = "";
-    // protected $weatherDesc = "";
     protected $todaysWeather = array();
 
     protected $dailyDate = [];
@@ -28,18 +20,11 @@ class Forecaster
     protected $historicalTemp = [];
     protected $historicalWind = [];
 
-    // ACTUAL USEFUL FUNCS
-
     public function getWeather($inputLat, $inputLong)
     {
         $this->latitude = $inputLat;
         $this->longitude = $inputLong;
-        // $configFile = file_get_contents("../config/config.json");
-        // $configFile = json_decode($configFile);
-        // $owmApiKey = $configFile->openweathermap->apikey;
         $owmApiKey = $this->owmApiKey;
-
-        // echo "<br>Trying to fetch weather with apikey [r40]: " . $owmApiKey;
 
         // Fetching epoch times for last 5 days
         $epochDays = array();
@@ -101,12 +86,6 @@ class Forecaster
 
             $this->todaysWeather["weatherMain"] = @$results[0]->current->weather[0]->main;
             $this->todaysWeather["weatherDesc"] = @$results[0]->current->weather[0]->description;
-            // $this->temperature = @$results[0]->current->temp;
-            // $this->feelsLike = @$results[0]->current->feels_like;
-            // $this->windSpeed = @$results[0]->current->wind_speed;
-            //
-            // $this->weatherMain = @$results[0]->current->weather[0]->main;
-            // $this->weatherDesc = @$results[0]->current->weather[0]->description;
 
             // Weather next 7 days
             $dailySize = @sizeof($results[0]->daily);

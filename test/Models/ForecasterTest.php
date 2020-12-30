@@ -28,15 +28,6 @@ class ForecasterModelTest extends TestCase
         // Load Forecaster (and other services) into DI
         $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
 
-        // Use a different cache dir for unit test
-        // echo "----------------------\n";
-        // echo "anaxinstallpath: " . ANAX_INSTALL_PATH . "\n";
-        // echo "dollarDI IS CURRENTLY\n\n";
-        // echo "";
-        // var_dump($di);
-        // echo "\n----------------------";
-        // $di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache/anax");
-
         $this->di = $di;
 
 
@@ -56,6 +47,7 @@ class ForecasterModelTest extends TestCase
         $model = $this->di->get("forecaster");
 
         // Setting API keys manually, since cache is not working in module.
+        // Replace next three lines with the two commented to reenable $di-config.
         $keyConfig = array();
         $keyConfig["config"]["geoapifyApikey"] = "d3b6bb0d9aba48baa5cc68cac5c6ac6a";
         $keyConfig["config"]["openweathermapApikey"] = "acf1a83dfb5dd2db934f4d12d3e1b97a";
@@ -87,6 +79,7 @@ class ForecasterModelTest extends TestCase
         $model = $this->di->get("forecaster");
 
         // Setting API keys manually, since cache is not working in module.
+        // Replace next three lines with the two commented to reenable $di-config.
         $keyConfig = array();
         $keyConfig["config"]["geoapifyApikey"] = "d3b6bb0d9aba48baa5cc68cac5c6ac6a";
         $keyConfig["config"]["openweathermapApikey"] = "acf1a83dfb5dd2db934f4d12d3e1b97a";
@@ -97,7 +90,6 @@ class ForecasterModelTest extends TestCase
 
         $model->setApiKeys($keyGeo, $keyOwm);
 
-        // First, fetch latlong when weather is not fetched.
         // Latlong is empty.
         $getResult = $model->getLatLong();
         $this->assertEquals(false, $getResult);
@@ -133,6 +125,7 @@ class ForecasterModelTest extends TestCase
         // Continue setting APIkeys
 
         // Setting API keys manually, since cache is not working in module.
+        // Replace next three lines with the two commented to reenable $di-config.
         $keyConfig = array();
         $keyConfig["config"]["geoapifyApikey"] = "d3b6bb0d9aba48baa5cc68cac5c6ac6a";
         $keyConfig["config"]["openweathermapApikey"] = "acf1a83dfb5dd2db934f4d12d3e1b97a";

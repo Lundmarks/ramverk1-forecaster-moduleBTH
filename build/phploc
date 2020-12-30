@@ -1,10 +1,10 @@
 phploc 7.0.2 by Sebastian Bergmann.
 
 Size
-  Lines of Code (LOC)                              298
-  Comment Lines of Code (CLOC)                      35 (11.74%)
-  Non-Comment Lines of Code (NCLOC)                263 (88.26%)
-  Logical Lines of Code (LLOC)                     159 (53.36%)
+  Lines of Code (LOC)                              277
+  Comment Lines of Code (CLOC)                      19 (6.86%)
+  Non-Comment Lines of Code (NCLOC)                258 (93.14%)
+  Logical Lines of Code (LLOC)                     159 (57.40%)
     Classes                                        159 (100.00%)
       Average Class Length                         159
         Minimum Class Length                       159
